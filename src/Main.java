@@ -12,17 +12,17 @@ public class Main {
         float weight = in.nextFloat();
 
         BmiService service = new BmiService();
-        float YourBmi = service.Bmi(weight, height);
+        float yourBmi = service.bmi(weight, height);
 
 
-        System.out.println("Body mass index = " + YourBmi);
+        System.out.println("Body mass index = " + yourBmi);
         in.close();
 
-        if (YourBmi > 18 && YourBmi < 25){
+        if (yourBmi > 18 && yourBmi < 25) {
             System.out.println("Your body mass index is Normal");
-        }else if(YourBmi < 18){
+        } else if (yourBmi < 18) {
             System.out.println("Your body mass index is Low");
-        }else{
+        } else {
             System.out.println("Your body mass index is High");
         }
     }
